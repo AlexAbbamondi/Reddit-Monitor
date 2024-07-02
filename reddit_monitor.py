@@ -25,8 +25,10 @@ est = pytz.timezone('US/Eastern')
 
 keywords = ['mesothelioma', 'asbestos']  # List of keywords to monitor
 subreddits_to_monitor = ['all']  # Subreddit name to monitor, use 'all' for all subreddits
-emails_list = os.getenv('EMAIL_RECIPIENTS')
-email_recipients = emails_list.split(',')
+
+emails_list = os.getenv('EMAIL_RECIPIENTS') # Retrieve the EMAIL_RECIPIENTS environment variable, which contains a comma-separated string of email addresses.
+email_recipients = emails_list.split(',') # Split the comma-separated string into a list of individual email addresses.
+
 email_sender = os.getenv('EMAIL_SENDER')  # Get the sender's email address from the environment variable
 email_password = os.getenv('EMAIL_PASSWORD')  # Get the sender's email password from the environment variable
 
