@@ -25,7 +25,9 @@ est = pytz.timezone('US/Eastern')
 
 keywords = ['mesothelioma', 'asbestos']  # List of keywords to monitor
 subreddits_to_monitor = ['all']  # Subreddit name to monitor, use 'all' for all subreddits
-email_recipients = ['aabbamondi@mesotheliomaguide.com', 'cjewett@mesotheliomaguide.com', 'karen@mesotheliomaguide.com']  # Replace with the recipient's email addresses
+# email_recipients = ['aabbamondi@mesotheliomaguide.com', 'cjewett@mesotheliomaguide.com', 'karen@mesotheliomaguide.com']  # Replace with the recipient's email addresses
+emails_list = os.getenv('EMAIL_RECIPIENTS')
+email_recipients = emails_list.split(',')
 email_sender = os.getenv('EMAIL_SENDER')  # Get the sender's email address from the environment variable
 email_password = os.getenv('EMAIL_PASSWORD')  # Get the sender's email password from the environment variable
 
