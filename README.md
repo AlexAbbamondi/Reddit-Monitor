@@ -28,8 +28,8 @@ This Python script monitors Reddit for posts containing specified keywords and s
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/reddit-keyword-alert.git
-    cd reddit-keyword-alert
+    git clone https://github.com/AlexAbbamondi/Reddit-Monitor.git
+    cd Reddit-Monitor
     ```
 
 2. Install the required Python packages:
@@ -62,7 +62,7 @@ EMAIL_RECIPIENTS=<email1,email2,...>
 Run the script using the command:
 
 ```bash
-python reddit_keyword_alert.py
+python reddit-monitor.py
 ```
 
 The script will automatically start monitoring Reddit and send daily alerts based on the specified keywords.
